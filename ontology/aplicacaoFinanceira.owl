@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/admin/ontologies/2017/4/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/admin/ontologies/2017/4/untitled-ontology-8">
+    <Prefix name="" IRI="http://www.semanticweb.org/admin/ontologies/2017/4/untitled-ontology-8"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="#comercializa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InstituicaoFinanceira"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PessoaJuridica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BancoDoBrasil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bradesco"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#taxaBancaria"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tributado"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#valorTributo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FundoInvestimento"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#adquiridaPor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Banco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arrojado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PessoaFisica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poupanca"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tempoAplicacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Santander"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sicred"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerfilInvestidor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaixaEconomicaFederal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CertificadoDepositoBancario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aplicador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AplicacaoFinanceira"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#valorAplicacao"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#classificadorPor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conservador"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PoupancaCaixa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReciboDepositoBancario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sicoob"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moderado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cooperativa"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#valorTaxaBancaria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Itau"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AplicacaoFinanceira"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#adquiridaPor"/>
+            <Class IRI="#Aplicador"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Aplicador"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#classificadorPor"/>
+            <Class IRI="#PerfilInvestidor"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InstituicaoFinanceira"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#comercializa"/>
+            <Class IRI="#AplicacaoFinanceira"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Arrojado"/>
+        <Class IRI="#PerfilInvestidor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Banco"/>
+        <Class IRI="#InstituicaoFinanceira"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BancoDoBrasil"/>
+        <Class IRI="#Banco"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bradesco"/>
+        <Class IRI="#Banco"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaixaEconomicaFederal"/>
+        <Class IRI="#Banco"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CertificadoDepositoBancario"/>
+        <Class IRI="#AplicacaoFinanceira"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conservador"/>
+        <Class IRI="#PerfilInvestidor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cooperativa"/>
+        <Class IRI="#InstituicaoFinanceira"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FundoInvestimento"/>
+        <Class IRI="#AplicacaoFinanceira"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Itau"/>
+        <Class IRI="#Banco"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moderado"/>
+        <Class IRI="#PerfilInvestidor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PessoaFisica"/>
+        <Class IRI="#Aplicador"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PessoaJuridica"/>
+        <Class IRI="#Aplicador"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poupanca"/>
+        <Class IRI="#AplicacaoFinanceira"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReciboDepositoBancario"/>
+        <Class IRI="#AplicacaoFinanceira"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Santander"/>
+        <Class IRI="#Banco"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sicoob"/>
+        <Class IRI="#Cooperativa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sicred"/>
+        <Class IRI="#Cooperativa"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AplicacaoFinanceira"/>
+        <Class IRI="#Aplicador"/>
+        <Class IRI="#InstituicaoFinanceira"/>
+        <Class IRI="#PerfilInvestidor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Arrojado"/>
+        <Class IRI="#Conservador"/>
+        <Class IRI="#Moderado"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Banco"/>
+        <Class IRI="#Cooperativa"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BancoDoBrasil"/>
+        <Class IRI="#Bradesco"/>
+        <Class IRI="#CaixaEconomicaFederal"/>
+        <Class IRI="#Itau"/>
+        <Class IRI="#Santander"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CertificadoDepositoBancario"/>
+        <Class IRI="#FundoInvestimento"/>
+        <Class IRI="#Poupanca"/>
+        <Class IRI="#ReciboDepositoBancario"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PessoaFisica"/>
+        <Class IRI="#PessoaJuridica"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Sicoob"/>
+        <Class IRI="#Sicred"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Poupanca"/>
+        <NamedIndividual IRI="#PoupancaCaixa"/>
+    </ClassAssertion>
+    <DifferentIndividuals/>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#taxaBancaria"/>
+        <NamedIndividual IRI="#PoupancaCaixa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tempoAplicacao"/>
+        <NamedIndividual IRI="#PoupancaCaixa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tributado"/>
+        <NamedIndividual IRI="#PoupancaCaixa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorAplicacao"/>
+        <NamedIndividual IRI="#PoupancaCaixa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#valorTaxaBancaria"/>
+        <NamedIndividual IRI="#PoupancaCaixa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">10.0</Literal>
+    </DataPropertyAssertion>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#taxaBancaria"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tempoAplicacao"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tributado"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#valorAplicacao"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#valorTaxaBancaria"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#taxaBancaria"/>
+        <Class IRI="#AplicacaoFinanceira"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tempoAplicacao"/>
+        <Class IRI="#AplicacaoFinanceira"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tributado"/>
+        <Class IRI="#AplicacaoFinanceira"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#valorAplicacao"/>
+        <Class IRI="#AplicacaoFinanceira"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#valorTaxaBancaria"/>
+        <Class IRI="#AplicacaoFinanceira"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#taxaBancaria"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tempoAplicacao"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tributado"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#valorAplicacao"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#valorTaxaBancaria"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#valorTributo"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#adquiridaPor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Define quem adiquire a aplicação financeira.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#classificadorPor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Define o perfil do investidor da aplicação financeira.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#taxaBancaria</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Define se aplicação possui taxa bancária.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tempoAplicacao</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Em meses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tributado</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Define se a aplicação tem cobrança de impostos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#valorAplicacao</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">O valor inicial da aplicação financeira.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#valorTaxaBancaria</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Se aplicação possui taxa bancarária aqui é especificado o valor da taxa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#valorTributo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Se a aplicação financeira é tributada aqui é especificado o valor percentual do imposto.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
