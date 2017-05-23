@@ -9,12 +9,12 @@ package br.ufsc.visao;
  *
  * @author admin
  */
-public class FrmPergunta0 extends javax.swing.JFrame {
+public class FrmResposta extends javax.swing.JFrame {
 
     /**
      * Creates new form FrmPergunta1
      */
-    public FrmPergunta0() {
+    public FrmResposta() {
         initComponents();
     }
 
@@ -29,16 +29,16 @@ public class FrmPergunta0 extends javax.swing.JFrame {
 
         btnGrpValor = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
-        jBtnAvancar = new javax.swing.JButton();
+        jBtnReiniciar = new javax.swing.JButton();
         jBtnFechar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setName("FrmPergunta1"); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel1.setText("Clique no botão Avançar para começar uma análise de crédito.");
+        jLabel1.setText("Resposta");
 
-        jBtnAvancar.setText("Avançar");
+        jBtnReiniciar.setText("Reiniciar");
 
         jBtnFechar.setText("Fechar");
 
@@ -55,19 +55,19 @@ public class FrmPergunta0 extends javax.swing.JFrame {
                         .addGap(99, 99, 99)
                         .addComponent(jBtnFechar)
                         .addGap(33, 33, 33)
-                        .addComponent(jBtnAvancar)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(jBtnReiniciar)
+                        .addGap(0, 128, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 210, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBtnFechar)
-                    .addComponent(jBtnAvancar))
+                    .addComponent(jBtnReiniciar))
                 .addGap(20, 20, 20))
         );
 
@@ -91,29 +91,31 @@ public class FrmPergunta0 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmPergunta0.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmResposta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmPergunta0.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmResposta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmPergunta0.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmResposta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmPergunta0.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmResposta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmPergunta0().setVisible(true);
+                new FrmResposta().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup btnGrpValor;
-    public javax.swing.JButton jBtnAvancar;
     public javax.swing.JButton jBtnFechar;
+    public javax.swing.JButton jBtnReiniciar;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

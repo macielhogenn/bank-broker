@@ -38,8 +38,8 @@
                       <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
                       <Component id="jBtnFechar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jBtnAvancar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jBtnReiniciar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -50,11 +50,11 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" pref="122" max="-2" attributes="0"/>
-              <EmptySpace pref="115" max="32767" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="27" max="-2" attributes="0"/>
+              <EmptySpace pref="210" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jBtnFechar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnAvancar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnReiniciar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
           </Group>
@@ -67,12 +67,12 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Clique no bot&#xe3;o Avan&#xe7;ar para come&#xe7;ar uma an&#xe1;lise de cr&#xe9;dito."/>
+        <Property name="text" type="java.lang.String" value="Resposta"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnAvancar">
+    <Component class="javax.swing.JButton" name="jBtnReiniciar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Avan&#xe7;ar"/>
+        <Property name="text" type="java.lang.String" value="Reiniciar"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

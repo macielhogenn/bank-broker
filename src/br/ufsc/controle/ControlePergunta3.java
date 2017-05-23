@@ -32,6 +32,12 @@ public class ControlePergunta3 {
                 jBtnVoltarActionPerformed(evt);
             }
         });
+
+        frm.jBtnAvancar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnAvancarActionPerformed(evt);
+            }
+        });
     }
 
     public void executar() {
@@ -48,5 +54,11 @@ public class ControlePergunta3 {
         frm.setVisible(false);
         ControlePergunta2 cp = new ControlePergunta2();
         cp.executar();
+    }
+
+    private void jBtnAvancarActionPerformed(java.awt.event.ActionEvent evt) {
+        frm.setVisible(false);
+        ControleResposta cr = new ControleResposta();
+        cr.executar();
     }
 }
