@@ -1,3 +1,5 @@
+/build/
+/dist/
 workspace/build
 workspace/gradle
 workspace/out
